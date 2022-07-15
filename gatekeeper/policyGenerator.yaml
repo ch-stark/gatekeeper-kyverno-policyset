@@ -9,7 +9,7 @@ policyDefaults:
     - CM Configuration Management
   controls: 
     - CM-2 Baseline Configuration
-  namespace: policies-appset
+  namespace: policies-gatekeeper
   remediationAction: enforce
   severity: medium
   policySets:
