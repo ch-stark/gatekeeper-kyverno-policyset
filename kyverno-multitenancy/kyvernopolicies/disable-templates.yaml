@@ -1,0 +1,26 @@
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: disable-templates
+  annotations:
+    policies.kyverno.io/title: disable-templates
+    policies.kyverno.io/category: Multi-Tenancy
+    policies.kyverno.io/subject: disable-templates
+    policies.kyverno.io/description: >-
+      Disabling ACM-templating feature
+spec:
+  rules:
+  - name: "disable-templates"
+    match:
+      any:
+      - resources:
+          kinds:
+          - policy.open-cluster-management.io/v1/Policy
+          selector:
+            matchLabels:
+              type: kyverno        
+    mutate:
+      patchStrategicMerge:
+        metadata:
+          annotations:
+            +(policy.open-cluster-management.io/disable-templates): true
