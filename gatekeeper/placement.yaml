@@ -1,8 +1,8 @@
 apiVersion: cluster.open-cluster-management.io/v1beta1
 kind: Placement
 metadata:
-  name: policies-appset-placement
-  namespace: policies-appset
+  name: policies-gatekeeper
+  namespace: policies-gatekeeper
 spec:
   predicates:
   - requiredClusterSelector:
