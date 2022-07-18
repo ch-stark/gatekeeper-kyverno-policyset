@@ -7,7 +7,7 @@ spec:
   destination:
     namespace: gatekeeper-policyset
     server: https://kubernetes.default.svc
-  project: gatekeeper-policyset
+  project: default
   source:
     path: gatekeeper
     repoURL: https://github.com/ch-stark/gatekeeper-kyverno-policyset.git
