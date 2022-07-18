@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: policyset-gatekeeper
+  namespace: policyset-gatekeeper
+spec:
+  destination:
+    namespace: policyset-gatekeeper
+    server: https://kubernetes.default.svc
+  project: policyset-gatekeeper
+  source:
+    path: gatekeeper
+    repoURL: https://github.com/ch-stark/gatekeeper-kyverno-policyset.git
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
