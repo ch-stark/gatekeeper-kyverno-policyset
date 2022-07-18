@@ -1,4 +1,4 @@
-i## gatekeeper-kyverno-policyset
+## gatekeeper-kyverno-policyset
 
 ## We will generate 3 PolicySets
 
@@ -6,8 +6,3 @@ i## gatekeeper-kyverno-policyset
 * Multitenancy-Focused PolicySet for Kyverno
 
 
-oc create ns gatekeeper-policyset
-namespace/gatekeeper-policyset created
-oc create ns kyverno-policyset
-namespace/kyverno-policyset created
-oc create ns kyverno-multitenancy-policyset
