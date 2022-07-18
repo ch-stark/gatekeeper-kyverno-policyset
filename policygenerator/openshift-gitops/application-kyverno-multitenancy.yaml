@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: kyverno-multitenancy-policyset
+    path: kyverno-multitenancy
     repoURL: https://github.com/ch-stark/gatekeeper-kyverno-policyset.git
     targetRevision: main
   syncPolicy:
