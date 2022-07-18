@@ -1,7 +1,7 @@
 apiVersion: policy.open-cluster-management.io/v1
 kind: PolicyGenerator
 metadata:
-  name: policy-gatekeeper
+  name: gatekeeper-policyset
 placementBindingDefaults:
   name: binding-generic
 policyDefaults:
@@ -9,7 +9,7 @@ policyDefaults:
     - CM Configuration Management
   controls: 
     - CM-2 Baseline Configuration
-  namespace: policies-gatekeeper
+  namespace: gatekeeper-policyset
   remediationAction: enforce
   severity: medium
   policySets:
