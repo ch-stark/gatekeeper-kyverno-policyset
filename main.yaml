@@ -79,8 +79,6 @@ spec:
     - emptyDir: {}
       name: policy-generator
   kustomizeBuildOptions: --enable-alpha-plugins
-
-
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
