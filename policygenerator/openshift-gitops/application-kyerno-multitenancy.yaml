@@ -1,15 +1,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: kyverno-multitenancy
-  namespace: kyverno-multitenancy
+  name: kyverno-multitenancy-policyset
+  namespace: kyverno-multitenancy-policyset
 spec:
   destination:
-    namespace: kyverno-multitenancy
+    namespace: kyverno-multitenancy-policyset
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: kyverno-multitenancy
+    path: kyverno-multitenancy-policyset
     repoURL: https://github.com/ch-stark/gatekeeper-kyverno-policyset.git
     targetRevision: main
   syncPolicy:

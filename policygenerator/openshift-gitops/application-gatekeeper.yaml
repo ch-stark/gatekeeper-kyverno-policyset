@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: policyset-gatekeeper
-  namespace: policyset-gatekeeper
+  name: gatekeeper-policyset
+  namespace: gatekeeper-policyset
 spec:
   destination:
-    namespace: policyset-gatekeeper
+    namespace: gatekeeper-policyset
     server: https://kubernetes.default.svc
-  project: policyset-gatekeeper
+  project: gatekeeper-policyset
   source:
     path: gatekeeper
     repoURL: https://github.com/ch-stark/gatekeeper-kyverno-policyset.git
