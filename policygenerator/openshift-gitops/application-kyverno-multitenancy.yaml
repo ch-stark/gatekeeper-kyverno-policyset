@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: kyverno-multitenancy-policyset
-  namespace: kyverno-multitenancy-policyset
+  namespace: openshift-gitops
 spec:
   destination:
     namespace: kyverno-multitenancy-policyset

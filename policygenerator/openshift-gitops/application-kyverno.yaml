@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: kyverno-policyset
-  namespace: kyverno-policyset
+  namespace: openshift-gitops
 spec:
   destination:
     namespace: kyverno-policyset
