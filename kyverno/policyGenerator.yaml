@@ -1,9 +1,9 @@
 apiVersion: policy.open-cluster-management.io/v1
 kind: PolicyGenerator
 metadata:
-  name: policy-kyverno
+  name: kyverno-policyset
 placementBindingDefaults:
-  name: binding-generic
+  name: kyverno-policyset
 policyDefaults:
   categories:
     - CM Configuration Management
