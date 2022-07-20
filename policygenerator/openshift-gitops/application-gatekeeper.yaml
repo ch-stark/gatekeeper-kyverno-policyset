@@ -6,7 +6,7 @@ metadata:
 spec:
   destination:
     namespace: gatekeeper-policyset
-    name: 'local-cluster'
+    name: 'in-cluster'
   project: default
   source:
     path: gatekeeper

@@ -6,7 +6,7 @@ metadata:
 spec:
   destination:
     namespace: kyverno-multitenancy-policyset
-    name: 'local-cluster'
+    name: 'in-cluster'
   project: default
   source:
     path: kyverno-multitenancy
