@@ -6,7 +6,8 @@ metadata:
 spec:
   destination:
     namespace: kyverno-multitenancy-policyset
-    server: https://kubernetes.default.svc
+    name: 'local-cluster'
+    server: '*'
   project: default
   source:
     path: kyverno-multitenancy
