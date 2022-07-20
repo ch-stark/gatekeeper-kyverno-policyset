@@ -5,6 +5,7 @@ metadata:
 placementBindingDefaults:
   name: kyverno-policyset
 policyDefaults:
+  configurationPolicyAnnotations: {"policy.open-cluster-management.io/disable-templates": "true"}
   categories:
     - CM Configuration Management
   controls: 
