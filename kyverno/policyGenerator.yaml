@@ -188,19 +188,3 @@ policies:
   manifests:
     - path: input/restrict-wildcard-verbs
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
