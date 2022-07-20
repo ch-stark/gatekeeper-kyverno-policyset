@@ -18,15 +18,6 @@ policyDefaults:
     - generic
   placementPath:  
     - placement.yaml
-policies:
-- name: container-warn-no-ro-fs
-  categories:
-    - setup
-  controls: 
-    - setup
-  disabled: false
-  manifests:
-    - path: input/container-warn-no-ro-fs
 - name: container-deny-escalation
   categories:
     - setup

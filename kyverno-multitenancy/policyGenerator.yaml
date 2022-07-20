@@ -74,7 +74,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: input/disallow-placementRules.yaml
+    - path: input/disallow-placementRules
 - name: generatePlacementRules
   categories:
     - setup
