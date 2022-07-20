@@ -19,86 +19,78 @@ policyDefaults:
   placementPath:  
     - placement.yaml
 policies:
-- name: add-labels-to-bluetenant
+- name: restrict_annotations
   categories:
     - setup
   controls: 
     - setup
   disabled: false
   manifests:
-    - path: kyverno/add-labels-to-bluetenant.yaml
-- name: add-labels-to-redtenant
+    - path: kyverno/restrict_annotations
+- name: restrict_automount_sa_token
   categories:
     - setup
   controls: 
     - setup
   disabled: false
   manifests:
-    - path: kyverno/add-labels-to-redtenant.yaml
-- name: add-managedclustersetbinding-shared-sre-group
+    - path: kyverno/restrict_automount_sa_token
+- name: restrict-binding-clusteradmin
   categories:
     - setup
   controls: 
     - setup
   disabled: false
   manifests:
-    - path: kyverno/add-managedclustersetbinding-shared-sre-group.yaml
-- name: application-prevent-updates-project-all
+    - path: kyverno/restrict-binding-clusteradmin
+- name: restrict-clusterrole-nodesproxy
   categories:
     - setup
   controls: 
     - setup
   disabled: false
   manifests:
-    - path: kyverno/application-prevent-updates-project-all.yaml
-- name: application-prevent-updates-project-all
+    - path: kyverno/restrict-clusterrole-nodesproxy
+- name: restrict_controlplane_scheduling
   categories:
     - setup
   controls: 
     - setup
   disabled: false
   manifests:
-    - path: kyverno/application-prevent-updates-project-all.yaml
-- name: disable-templates
+    - path: kyverno/restrict_controlplane_scheduling
+- name: restrict-escalation-verbs-roles
   categories:
     - setup
   controls: 
     - setup
   disabled: false
   manifests:
-    - path: kyverno/disable-templates.yaml
-- name: disallow-placementRules
+    - path: kyverno/restrict-escalation-verbs-roles
+- name: restrict_ingress_classes
   categories:
     - setup
   controls: 
     - setup
   disabled: false
   manifests:
-    - path: kyverno/disallow-placementRules.yaml
-- name: generate-all-blueteam-spoke
+    - path: kyverno/restrict_ingress_classes
+- name: restrict_ingress_defaultbackend
   categories:
     - setup
   controls: 
     - setup
   disabled: false
   manifests:
-    - path: kyverno/generate-all-blueteam-spoke.yml
-- name: generate-all-redteam-spoke
+    - path: kyverno/restrict_ingress_defaultbackend
+- name: restrict_ingress_host
   categories:
     - setup
   controls: 
     - setup
   disabled: false
   manifests:
-    - path: kyverno/generate-all-redteam-spoke.yml
-- name: generate-argocd-permissions-blueteam-spoke
-  categories:
-    - setup
-  controls: 
-    - setup
-  disabled: false
-  manifests:
-    - path: kyverno/generate-argocd-permissions-blueteam-spoke.yaml
+    - path: kyverno/restrict_ingress_host
 - name: generateManagedClusterSetBindingblueteam-hub
   categories:
     - setup
@@ -107,102 +99,102 @@ policies:
   disabled: false
   manifests:
     - path: kyverno/generateManagedClusterSetBindingblueteam-hub.yaml
-- name: generateManagedClusterSetBindingredteam-hub
+- name: restrict-ingress-wildcard
   categories:
     - setup
   controls: 
     - setup
   disabled: false
   manifests:
-    - path: kyverno/generateManagedClusterSetBindingredteam-hub.yaml
-- name: generatePlacementredteam-hub
+    - path: kyverno/restrict-ingress-wildcard
+- name: restrict_loadbalancer
   categories:
     - setup
   controls: 
     - setup
   disabled: false
   manifests:
-    - path: kyverno/generatePlacementredteam-hub.yaml
-- name: generatePlacementblueteam-hub
+    - path: kyverno/restrict_loadbalancer
+- name: restrict_node_selection
   categories:
     - setup
   controls: 
     - setup
   disabled: false
   manifests:
-    - path: kyverno/generatePlacementblueteam-hub.yaml
-- name: preventupdates-appproject-all
+    - path: kyverno/restrict_node_selection
+- name: restrict_pod_count_per_node
   categories:
     - setup
   controls: 
     - setup
   disabled: false
   manifests:
-    - path: kyverno/preventupdates-appproject-all.yaml
-- name: restrict-blueteam-to-its-appproject-all
+    - path: kyverno/restrict_pod_count_per_node
+- name: restrict-secret-role-verbs
   categories:
     - setup
   controls: 
     - setup
   disabled: false
   manifests:
-    - path: kyverno/restrict-blueteam-to-its-appproject-all.yaml
-- name: restrict-redteam-to-its-appproject-all
+    - path: kyverno/restrict-secret-role-verbs
+- name: restrict_secrets_by_label
   categories:
     - setup
   controls: 
     - setup
   disabled: false
   manifests:
-    - path: kyverno/restrict-redteam-to-its-appproject-all.yaml
-- name: restrict-redteam-to-its-placement-hub
+    - path: kyverno/restrict_secrets_by_label
+- name: restrict_secrets_by_name
   categories:
     - setup
   controls: 
     - setup
   disabled: false
   manifests:
-    - path: kyverno/restrict-redteam-to-its-placement-hub.yaml
-- name: restrict-blueteam-to-its-placement-hub
+    - path: kyverno/restrict_secrets_by_name
+- name: restrict-service-account
   categories:
     - setup
   controls: 
     - setup
   disabled: false
   manifests:
-    - path: kyverno/restrict-blueteam-to-its-placement-hub.yaml
-- name: validate-ns-bluesre-spoke
+    - path: kyverno/restrict-service-account
+- name: restrict_service_port_range
   categories:
     - setup
   controls: 
     - setup
   disabled: false
   manifests:
-    - path: kyverno/validate-ns-bluesre-spoke.yaml
-- name: validate-ns-redsre-spoke
+    - path: kyverno/restrict_service_port_range
+- name: restrict_usergroup_fsgroup_id
   categories:
     - setup
   controls: 
     - setup
   disabled: false
   manifests:
-    - path: kyverno/validate-ns-redsre-spoke.yaml
-- name: validateplacementblueteam-hub
+    - path: kyverno/restrict_usergroup_fsgroup_id
+- name: restrict-wildcard-resources
   categories:
     - setup
   controls: 
     - setup
   disabled: false
   manifests:
-    - path: kyverno/validateplacementblueteam-hub.yml
-- name: validateplacementredteam-hub
+    - path: kyverno/restrict-wildcard-resources
+- name: restrict-wildcard-verbs
   categories:
     - setup
   controls: 
     - setup
   disabled: false
   manifests:
-    - path: kyverno/validateplacementredteam-hub.yml
+    - path: kyverno/restrict-wildcard-verbs
 
 
 
