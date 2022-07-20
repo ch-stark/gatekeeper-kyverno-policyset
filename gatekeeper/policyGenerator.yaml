@@ -26,7 +26,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: gatekeeper/container-warn-no-ro-fs
+    - path: input/container-warn-no-ro-fs
 - name: container-deny-escalation
   categories:
     - setup
@@ -34,7 +34,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: gatekeeper/container-deny-escalation
+    - path: input/container-deny-escalation
 - name: container-deny-latest
   categories:
     - setup
@@ -42,7 +42,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: gatekeeper/container-deny-latest
+    - path: input/container-deny-latest
 - name: container-deny-privileged
   categories:
     - setup
@@ -50,21 +50,23 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: gatekeeper/container-deny-privileged
+    - path: input/container-deny-privileged
 - name: container-deny-privileged-if-tenant 
   categories:
     - setup
   controls: 
     - setup
   disabled: false
-    - path: gatekeeper/container-deny-privileged-if-tenant    
+  manifests:
+    - path: input/container-deny-privileged-if-tenant    
 - name: container-deny-without-resource-constraints
   categories:
     - setup
   controls: 
     - setup
   disabled: false
-    - path: gatekeeper/container-deny-without-resource-constraints
+  manifests:
+    - path: input/container-deny-without-resource-constraints
 - name: pod-deny-host-alias
   categories:
     - setup
@@ -72,7 +74,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: gatekeeper/pod-deny-host-alias
+    - path: input/pod-deny-host-alias
 - name: pod-deny-host-ipc
   categories:
     - setup
@@ -80,7 +82,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: gatekeeper/pod-deny-host-ipc
+    - path: input/pod-deny-host-ipc
 - name: pod-deny-host-network
   categories:
     - setup
@@ -88,7 +90,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: gatekeeper/pod-deny-host-network
+    - path: input/pod-deny-host-network
 - name: pod-deny-host-pid
   categories:
     - setup
@@ -96,7 +98,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: gatekeeper/pod-deny-host-pid
+    - path: input/pod-deny-host-pid
 - name: disable-templates
   categories:
     - setup
@@ -104,7 +106,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: gatekeeper/pod-deny-without-runasnonroot
+    - path: input/pod-deny-without-runasnonroot
 
 
 

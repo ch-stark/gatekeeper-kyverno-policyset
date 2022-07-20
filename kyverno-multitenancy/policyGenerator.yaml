@@ -26,7 +26,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: kyverno/add-labels-to-tenant
+    - path: input/add-labels-to-tenant
 - name: disallowplacementrules
   categories:
     - setup
@@ -34,7 +34,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: kyverno/disallowplacementrules
+    - path: input/disallowplacementrules
 - name: generateall
   categories:
     - setup
@@ -42,7 +42,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: kyverno/generateall
+    - path: input/generateall
 - name: generateargocdpersmissions
   categories:
     - setup
@@ -50,7 +50,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: kyverno/generateargocdpersmissions
+    - path: input/generateargocdpersmissions
 - name: generateManagedClusterSetBinding
   categories:
     - setup
@@ -58,7 +58,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: kyverno/generateManagedClusterSetBinding
+    - path: input/generateManagedClusterSetBinding
 - name: generatePlacementRules
   categories:
     - setup
@@ -66,7 +66,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: kyverno/generatePlacementRules
+    - path: input/generatePlacementRules
 - name: disallow-placementRules
   categories:
     - setup
@@ -74,7 +74,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: kyverno/disallow-placementRules.yaml
+    - path: input/disallow-placementRules.yaml
 - name: generatePlacementRules
   categories:
     - setup
@@ -82,7 +82,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: kyverno/generatePlacementRules
+    - path: input/generatePlacementRules
 - name: other
   categories:
     - setup
@@ -90,7 +90,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: kyverno/other
+    - path: input/other
 - name: preventupdatesappproject
   categories:
     - setup
@@ -98,7 +98,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: kyverno/preventupdatesappproject
+    - path: input/preventupdatesappproject
 - name: restrictions
   categories:
     - setup
@@ -106,7 +106,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: kyverno/restrictions
+    - path: input/restrictions
 - name: sharedresources
   categories:
     - setup
@@ -114,7 +114,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: kyverno/sharedresources
+    - path: input/sharedresources
 - name: validatens
   categories:
     - setup
@@ -122,7 +122,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: kyverno/validatens
+    - path: input/validatens
 - name: validateplacement
   categories:
     - setup
@@ -130,7 +130,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: kyverno/validateplacement
+    - path: input/validateplacement
 
 
 
