@@ -18,6 +18,7 @@ policyDefaults:
     - generic
   placementPath:  
     - placement.yaml
+policies:    
 - name: container-deny-escalation
   categories:
     - setup
