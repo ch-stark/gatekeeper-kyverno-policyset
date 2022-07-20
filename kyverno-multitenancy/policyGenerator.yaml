@@ -43,7 +43,7 @@ policies:
   disabled: false
   manifests:
     - path: input/generateall
-- name: generateargocdpersmissions
+- name: genargocdpersmissions
   categories:
     - setup
   controls: 
@@ -51,7 +51,7 @@ policies:
   disabled: false
   manifests:
     - path: input/generateargocdpersmissions
-- name: generate-managed-clusterset-binding
+- name: gen-managed-clusterset-binding
   categories:
     - setup
   controls: 
@@ -59,7 +59,7 @@ policies:
   disabled: false
   manifests:
     - path: input/generateManagedClusterSetBinding
-- name: generate-placement-rules
+- name: gen-placement-rules
   categories:
     - setup
   controls: 
