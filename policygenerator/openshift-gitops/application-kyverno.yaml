@@ -7,6 +7,7 @@ spec:
   destination:
     namespace: kyverno-policyset
     name: 'local-cluster'
+    server: '*'
   project: default
   source:
     path: kyverno
