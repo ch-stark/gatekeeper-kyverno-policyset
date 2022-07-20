@@ -7,7 +7,6 @@ spec:
   destination:
     namespace: gatekeeper-policyset
     name: 'local-cluster'
-    server: '*'
   project: default
   source:
     path: gatekeeper
