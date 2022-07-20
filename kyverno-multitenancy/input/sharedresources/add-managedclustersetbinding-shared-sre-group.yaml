@@ -87,9 +87,9 @@ spec:
     preconditions:
       any:
       - key: "{{request.operation}}"
-	operator: In
-	value:
-	- CREATE
+        operator: In
+        value:
+        - CREATE
     generate:
       apiVersion: cluster.open-cluster-management.io/v1beta1
       kind: Placement
@@ -97,11 +97,11 @@ spec:
       namespace: "{{request.object.metadata.name}}"
       synchronize: true
       data:
-	predicates:
-	- requiredClusterSelector:
-	    labelSelector:
-	      matchLabels:
-	        env: dev   
+        predicates:
+        - requiredClusterSelector:
+            labelSelector:
+              matchLabels:
+                env: dev   
           
           
           
