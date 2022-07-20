@@ -19,7 +19,7 @@ policyDefaults:
   placementPath:  
     - placement.yaml
 policies:
-- name: add-labels-to-tenant
+- name: kyverno/add-labels-to-tenant
   categories:
     - setup
   controls: 

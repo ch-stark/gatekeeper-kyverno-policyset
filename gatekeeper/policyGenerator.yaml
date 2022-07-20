@@ -64,7 +64,7 @@ policies:
   controls: 
     - setup
   disabled: false
-    - path: container-deny-without-resource-constraints
+    - path: gatekeeper/container-deny-without-resource-constraints
 - name: pod-deny-host-alias
   categories:
     - setup
