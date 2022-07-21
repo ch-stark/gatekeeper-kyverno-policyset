@@ -30,8 +30,6 @@ spec:
               name: default
             spec:
               clusterSet: default
-        remediationAction: enforce
-        severity: low
         - complianceType: musthave
           objectDefinition:
             apiVersion: cluster.open-cluster-management.io/v1beta1
@@ -41,8 +39,6 @@ spec:
               name: default
             spec:
               clusterSet: default
-        remediationAction: enforce
-        severity: low 
         - complianceType: musthave
           objectDefinition:
             apiVersion: cluster.open-cluster-management.io/v1beta1
