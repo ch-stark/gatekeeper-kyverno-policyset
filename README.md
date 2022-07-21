@@ -8,6 +8,8 @@
 main.yaml:
 
 * creates namespaces, installs GitopsOperator, installs PolicyGenerator with ArgoCD
-* .... installs 3 ArgoCD Applications
 
+policygenerator/openshift-gitops/
+
+* .... installs 3 ArgoCD Applications
 
