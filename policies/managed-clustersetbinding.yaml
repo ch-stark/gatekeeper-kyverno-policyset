@@ -44,7 +44,7 @@ spec:
             apiVersion: cluster.open-cluster-management.io/v1beta1
             kind: ManagedClusterSetBinding
             metadata:
-              namespace: kyverno-policyset 
+              namespace: kyverno-multitenancy-policyset 
               name: default
             spec:
               clusterSet: default
