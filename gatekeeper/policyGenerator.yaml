@@ -5,7 +5,6 @@ metadata:
 placementBindingDefaults:
   name: binding-generic
 policyDefaults:
-  configurationPolicyAnnotations: {"policy.open-cluster-management.io/disable-templates": "true"}
   categories:
     - CM Configuration Management
   controls: 
