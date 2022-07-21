@@ -21,6 +21,6 @@ policygenerator/openshift-gitops/
 In the images
 
 
-* every Policy-Set/Policy-Enforcement-Point has it's own input kyverno/input/
+* every Policy-Set/Policy-Enforcement-Point has it's own input e.g. kyverno/input/ where the resources reside
 
 
