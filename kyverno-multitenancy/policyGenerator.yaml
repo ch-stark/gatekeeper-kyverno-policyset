@@ -116,7 +116,7 @@ policies:
   disabled: false
   manifests:
     - path: input/validateplacement
- policySets:
+policySets:
   - description: kyverno-multitenancy-policyset to apply set of kyverno-policies.
     name: kyverno-multitenancy-policyset
     placement:
