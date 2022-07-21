@@ -3,7 +3,7 @@ kind: PolicyGenerator
 metadata:
   name: gatekeeper-policyset
 placementBindingDefaults:
-  name: binding-generic
+  name: gatekeeper-policyset
 policyDefaults:
   categories:
     - CM Configuration Management
