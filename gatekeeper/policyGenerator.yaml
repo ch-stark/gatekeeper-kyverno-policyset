@@ -99,7 +99,7 @@ policies:
   disabled: false
   manifests:
     - path: input/pod-deny-without-runasnonroot
-  policySets:
+policySets:
   - description: gatekeeper-policyset to apply set of gatekeeper-policies.
     name: gatekeeper-policyset
     placement:
