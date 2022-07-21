@@ -244,6 +244,11 @@ policies:
   disabled: false
   manifests:
     - path: input/monitoring-observability
+ policySets:
+  - description: kyverno-policyset to apply set of kyverno-policies.
+    name: kyverno-policyset
+    placement:
+      placementPath: placement.yaml
 
     
 
