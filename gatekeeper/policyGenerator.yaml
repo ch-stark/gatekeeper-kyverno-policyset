@@ -100,6 +100,11 @@ policies:
   disabled: false
   manifests:
     - path: input/pod-deny-without-runasnonroot
+  policySets:
+  - description: gatekeeper-policyset to apply set of gatekeeper-policies.
+    name: gatekeeper-policyset
+    placement:
+      placementPath: placement.yaml
 
 
 
