@@ -19,3 +19,8 @@ policygenerator/openshift-gitops/
 * .... installs 3 ArgoCD Applications
 
 In the images
+
+
+* every Policy-Set/Policy-Enforcement-Point has it's own input kyverno/input/
+
+
