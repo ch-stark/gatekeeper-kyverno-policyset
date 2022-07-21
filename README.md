@@ -5,4 +5,9 @@
 * Security-Focused PolicySets for Gatekeeper and Kyverno as well as a 
 * Multitenancy-Focused PolicySet for Kyverno
 
+main.yaml:
+
+* creates namespaces, installs GitopsOperator, installs PolicyGenerator with ArgoCD
+* .... installs 3 ArgoCD Applications
+
 
