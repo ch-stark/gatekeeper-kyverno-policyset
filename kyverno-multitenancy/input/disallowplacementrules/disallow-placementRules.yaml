@@ -3,7 +3,7 @@ kind: ClusterPolicy
 metadata:
   name: disallow-placementrules
 spec:
-  validationFailureAction: enforce
+  validationFailureAction: audit
   background: false
   rules:
   - name: disallow-placementrules
