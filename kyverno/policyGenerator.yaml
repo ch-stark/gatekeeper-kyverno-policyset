@@ -14,7 +14,7 @@ policyDefaults:
   remediationAction: enforce
   severity: medium
   policySets:
-    - kyverno-multitenancy
+    - kyverno-policyset
   standards:
     - generic
   placementPath:  
