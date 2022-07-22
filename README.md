@@ -18,9 +18,7 @@ policygenerator/openshift-gitops/
 
 * .... installs 3 ArgoCD Applications
 
-
 * every Policy-Set/Policy-Enforcement-Point has it's own input e.g. kyverno/input/ where the resources reside
-
 
 ## How to run it
 ```shell
@@ -29,8 +27,8 @@ until oc apply -f https://raw.githubusercontent.com/ch-stark/gatekeeper-kyverno-
 
 * it created the namespaces
 * configures ArgoCD to use with PolicyGenerator
-* installs Kyverno and/or Gatekeeper via ACM-Policies 
-* sets up ManagedClusterSetBindings to default ClusterSet for the namespaces where the PolicySets will be installed.
+* installs [Kyverno](https://github.com/stolostron/policy-collection/blob/main/community/CM-Configuration-Management/policy-install-kyverno.yaml) and/or Gatekeeper via ACM-Policies 
+* used a [policy](https://raw.githubusercontent.com/ch-stark/gatekeeper-kyverno-policyset/main/policies/managed-clustersetbinding.yaml) that sets up ManagedClusterSetBindings to default ClusterSet for the namespaces where the PolicySets will be installed.
 
 
 # Structure
