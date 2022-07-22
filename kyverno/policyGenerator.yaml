@@ -203,7 +203,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: input/resource-exhaustion
+    - path: input/resource-exhaustion/disallow-self-provisioner
 - name: trusted-image-sources 
   categories:
     - setup
