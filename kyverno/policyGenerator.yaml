@@ -180,14 +180,22 @@ policies:
   disabled: false
   manifests:
     - path: input/restrict-wildcard-verbs
-- name: networking
+- name: networking-block-nodeport-services
   categories:
     - setup
   controls: 
     - setup
   disabled: false
   manifests:
-    - path: input/networking
+    - path: input/networking/block-nodeport-services
+- name: networking-httpsonly
+  categories:
+    - setup
+  controls: 
+    - setup
+  disabled: false
+  manifests:
+    - path: input/networking/httpsonly
 - name: resource-exhaustion
   categories:
     - setup
