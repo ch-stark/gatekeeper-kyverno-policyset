@@ -27,6 +27,12 @@ policygenerator/openshift-gitops/
 until oc apply -f https://raw.githubusercontent.com/ch-stark/gatekeeper-kyverno-policyset/main/main.yaml; do sleep 15; done
 ```
 
+* it created the namespaces
+* configures ArgoCD to use with PolicyGenerator
+* installs Kyverno and/or Gatekeeper via ACM-Policies 
+* sets up ManagedClusterSetBindings to default ClusterSet for the namespaces where the PolicySets will be installed.
+
+
 # Structure
 ```shell
 |-- gatekeeper-kyverno-policyset
