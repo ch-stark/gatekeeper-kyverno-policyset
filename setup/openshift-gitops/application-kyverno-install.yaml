@@ -10,8 +10,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: rbacmultitenancydemo/kyverno
-    repoURL: https://github.com/ch-stark/gitops-rbac-example.git
+    path: setup/kyverno
+    repoURL: https://github.com/ch-stark/gatekeeper-kyverno-policyset.git
     targetRevision: HEAD
   ignoreDifferences:
   - kind: "Namespace"  
