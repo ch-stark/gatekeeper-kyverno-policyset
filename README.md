@@ -70,68 +70,68 @@ until oc apply -f https://raw.githubusercontent.com/ch-stark/gatekeeper-kyverno-
 
 ## Gatekeeper
 
-any-warn-deprecated-api-versions
-container-deny-latest-tag
-container-deny-privileged-if-tenant
-pod-deny-host-ipc
-pod-deny-without-runasnonroot
-container-deny-added-caps
-container-deny-no-resource-constraints 
-pod-deny-host-network
-container-deny-escalation 
-container-deny-privileged
-pod-deny-host-alias
-pod-deny-host-pid
+* any-warn-deprecated-api-versions
+* container-deny-latest-tag
+* container-deny-privileged-if-tenant
+* pod-deny-host-ipc
+* pod-deny-without-runasnonroot
+* container-deny-added-caps
+* container-deny-no-resource-constraints 
+* pod-deny-host-network
+* container-deny-escalation 
+* container-deny-privileged
+* pod-deny-host-alias
+* pod-deny-host-pid
 
 ## Kyverno
 
-authentication-user-management
-networking
-restrict-clusterrole-nodesproxy
-restrict_ingress_host  
-restrict-secret-role-verbs  
-restrict_usergroup_fsgroup_id
-authorization 
-resource-exhaustion
-restrict_controlplane_scheduling
-restrict-ingress-wildcard
-restrict_secrets_by_label
-restrict-wildcard-resources
-etcd-security
-restrict_annotations
-restrict-escalation-verbs-roles
-restrict_loadbalancer 
-restrict_secrets_by_name 
-restrict-wildcard-verbs
-infrastructure-general
-restrict_automount_sa_token
-restrict_ingress_classes
-restrict_node_selection 
-restrict-service-account
-storage
-monitoring-observability 
-restrict-binding-clusteradmin
-restrict_ingress_defaultbackend
-restrict_pod_count_per_node
-restrict_service_port_range 
-trusted-image-sources
+* authentication-user-management
+* networking
+* restrict-clusterrole-nodesproxy
+* restrict_ingress_host  
+* restrict-secret-role-verbs  
+* restrict_usergroup_fsgroup_id
+* authorization 
+* resource-exhaustion
+* restrict_controlplane_scheduling
+* restrict-ingress-wildcard
+* restrict_secrets_by_label
+* restrict-wildcard-resources
+* etcd-security
+* restrict_annotations
+* restrict-escalation-verbs-roles
+* restrict_loadbalancer 
+* restrict_secrets_by_name 
+* restrict-wildcard-verbs
+* infrastructure-general
+* restrict_automount_sa_token
+* restrict_ingress_classes
+* restrict_node_selection 
+* restrict-service-account
+* storage
+* monitoring-observability 
+* restrict-binding-clusteradmin
+* restrict_ingress_defaultbackend
+* restrict_pod_count_per_node
+* restrict_service_port_range 
+* trusted-image-sources
 
 
 
 ## Kyverno-Multitenancy
 
-addlabelstotenant
-generateManagedClusterSetBinding
-restrictions
-disallowplacementrules
-generatePlacementRules
-sharedresources
-generateall   
-other  
-validatens
-generateargocdpersmissions 
-preventupdatesappproject  
-validateplacement
+* addlabelstotenant
+* generateManagedClusterSetBinding
+* restrictions
+* disallowplacementrules
+* generatePlacementRules
+* sharedresources
+* generateall   
+* other  
+* validatens
+* generateargocdpersmissions 
+* preventupdatesappproject  
+* validateplacement
 
 # Testing
 
