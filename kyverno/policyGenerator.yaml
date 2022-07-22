@@ -227,7 +227,7 @@ policies:
     - setup
   disabled: false
   manifests:
-    - path: input/authorization/host-namespaces/protect-default-scc
+    - path: input/authorization/protect-default-scc
 - name: monitoring-observability
   categories:
     - setup
