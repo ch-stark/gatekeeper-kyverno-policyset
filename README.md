@@ -22,8 +22,8 @@ policygenerator/openshift-gitops/
 
 ## How to run it
 ```shell
-oc apply -f https://raw.githubusercontent.com/ch-stark/gatekeeper-kyverno-policyset/policies/managed-clustersetbinding.yaml 
-oc apply -f https://raw.githubusercontent.com/stolostron/policy-collection/main/community/CM-Configuration-Management/policy-install-kyverno.yaml
+oc apply -f https://raw.githubusercontent.com/ch-stark/gatekeeper-kyverno-policyset/main/policies/managed-clustersetbinding.yaml
+oc apply -f https://raw.githubusercontent.com/ch-stark/gatekeeper-kyverno-policyset/main/policies/install-kyverno.yaml
 until oc apply -f https://raw.githubusercontent.com/ch-stark/gatekeeper-kyverno-policyset/main/main.yaml; do sleep 15; done
 ```
 
